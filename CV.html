@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vedant Kaul — CV</title>
+  <meta name="description" content="Resume of Vedant Kaul — MBA (BITSoM, Class of 2026), Product & Business Development, Software Engineering." />
+  <meta property="og:title" content="Vedant Kaul — CV" />
+  <meta property="og:description" content="MBA (BITSoM, 2026) with experience in Business Development at Arka Energy and Software Engineering at LTIMindtree." />
+  <style>
+    :root{
+      --bg:#0b0d10; --card:#12161b; --text:#e7edf5; --muted:#9fb0c3; --accent:#63b3ff; --line:#1e242c;
+      --chip:#1a2028; --chipText:#cfe6ff;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#ffffff; --card:#f7f9fc; --text:#0f141a; --muted:#4a5b6b; --accent:#0a84ff; --line:#e6eaee;
+        --chip:#eef5ff; --chipText:#084a88;
+      }
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:linear-gradient(120deg, var(--bg), #10151c 40%, var(--bg) 100%); color:var(--text);
+      line-height:1.55;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{display:grid; grid-template-columns:280px 1fr; min-height:100vh}
+    nav{
+      position:sticky; top:0; height:100vh; padding:32px 24px; border-right:1px solid var(--line);
+      background:linear-gradient(180deg, var(--card), rgba(0,0,0,0));
+    }
+    .brand{display:flex; gap:12px; align-items:center; margin-bottom:20px}
+    .avatar{
+      width:56px; height:56px; border-radius:14px; background:linear-gradient(180deg,#5db2ff,#7ad7ff);
+      display:grid; place-items:center; color:#003a66; font-weight:800
+    }
+    .brand h1{font-size:20px; margin:0}
+    .tag{color:var(--muted); font-size:12px}
+    .menu{margin-top:16px; display:flex; flex-direction:column; gap:10px}
+    .menu a{
+      padding:10px 12px; border-radius:10px; color:var(--text); border:1px solid transparent
+    }
+    .menu a:hover{background:var(--card); border-color:var(--line)}
+    .cta{margin-top:18px; display:flex; gap:8px; flex-wrap:wrap}
+    .btn{
+      border:1px solid var(--line); background:var(--card); color:var(--text);
+      padding:10px 12px; border-radius:10px; cursor:pointer
+    }
+    .btn.primary{background:var(--accent); color:#001730; border-color:transparent}
+    main{padding:40px 48px}
+    header{
+      background:linear-gradient(180deg, rgba(99,179,255,.15), transparent 60%);
+      padding:8px 0 24px; margin-bottom:16px; border-bottom:1px solid var(--line)
+    }
+    .headline{font-size:28px; margin:0 0 6px}
+    .sub{color:var(--muted); margin:0}
+    section{padding:28px 0; border-bottom:1px solid var(--line)}
+    section:last-of-type{border-bottom:none}
+    h2{font-size:18px; letter-spacing:.2px; margin:0 0 18px; color:var(--text)}
+    .grid{display:grid; gap:14px}
+    .card{
+      background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px
+    }
+    .row{display:flex; justify-content:space-between; gap:12px; align-items:flex-start; flex-wrap:wrap}
+    .title{font-weight:700}
+    .when{color:var(--muted)}
+    ul{margin:10px 0 0 18px}
+    li{margin:6px 0}
+    .chips{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+    .chip{background:var(--chip); color:var(--chipText); padding:6px 10px; border-radius:999px; font-size:12px; border:1px solid var(--line)}
+    .two-col{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+    @media (max-width:980px){ .wrap{grid-template-columns:1fr}; nav{position:static; height:auto; border-right:none}; main{padding:24px}}
+    @media print{
+      nav{display:none}
+      main{padding:0}
+      body{background:#fff}
+      .card{break-inside:avoid}
+      a{color:#000}
+    }
+    /* smooth scroll */
+    html{scroll-behavior:smooth}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="brand">
+        <div class="avatar">VK</div>
+        <div>
+          <h1>Vedant Kaul</h1>
+          <div class="tag">BITSoM, Class of 2026</div>
+        </div>
+      </div>
+      <div class="menu">
+        <a href="#summary">Summary</a>
+        <a href="#education">Education</a>
+        <a href="#work">Work Experience</a>
+        <a href="#por">Positions of Responsibility</a>
+        <a href="#skills">Technical Skills</a>
+        <a href="#certs">Certifications & Extracurriculars</a>
+      </div>
+      <div class="cta">
+        <button class="btn primary" onclick="window.print()">Print / Save as PDF</button>
+        <a class="btn" href="https://github.com/new" target="_blank" rel="noopener">Push to GitHub</a>
+      </div>
+    </nav>
+
+    <main>
+      <header>
+        <h1 class="headline">Resume</h1>
+        <p class="sub">MBA candidate with experience across Business Development, Marketing Enablement, and Software Engineering.</p>
+      </header>
+
+      <section id="summary">
+        <h2>Profile</h2>
+        <div class="card">
+          Result-oriented professional with a blend of <b>U.S. go-to-market</b> experience (solar SaaS/services) and <b>full-stack software delivery</b>. Comfortable driving outreach, pricing, and analytics; hands-on with Agile delivery, testing frameworks, and stakeholder management.
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="grid">
+          <div class="card">
+            <div class="row"><div class="title">MBA — BITS School of Management (BITSoM), Mumbai</div><div class="when">2026 (Pursuing)</div></div>
+          </div>
+          <div class="card">
+            <div class="row"><div class="title">BE (E&TC) — Pune Institute of Computer Technology, Pune</div><div class="when">2020</div></div>
+            CGPA: 8.72/10
+          </div>
+          <div class="card">
+            <div class="row"><div class="title">Higher Secondary (CBSE) — DPS RK Puram, New Delhi</div><div class="when">2016</div></div>
+            Score: 89.6%
+          </div>
+          <div class="card">
+            <div class="row"><div class="title">Senior Secondary (CBSE) — DPS RK Puram, New Delhi</div><div class="when">2014</div></div>
+            CGPA: 9.8/10
+          </div>
+          <div class="card">
+            <div class="row"><div class="title">Academic Achievements</div></div>
+            <ul>
+              <li>Techno 2k19 — Shortlisted (state-level, 35+ teams) — 2019</li>
+              <li>Academic excellence — 6 consecutive years — 2015</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="work">
+        <h2>Work Experience</h2>
+
+        <div class="card">
+          <div class="row">
+            <div class="title">Arka Energy — Business Development Intern</div>
+            <div class="when">(May 2025 – Jul 2025)</div>
+          </div>
+          <div class="two-col">
+            <div>
+              <b>Sales Strategy & Business Development</b>
+              <ul>
+                <li>Built focused U.S. sales strategy; boosted outreach efficiency and drove ~15% revenue uplift in Q2.</li>
+                <li>Revamped U.S. pricing with 3-tiered packages; ~10% uplift in deal value per client.</li>
+                <li>LinkedIn outreach to 300+ solar professionals; ~5% converted to qualified demo leads.</li>
+                <li>Designed HubSpot campaigns; converted leads into <b>12 booked demos</b>.</li>
+              </ul>
+            </div>
+            <div>
+              <b>Marketing & Growth Enablement</b>
+              <ul>
+                <li>Analysed global Arka360 data; built Power BI visuals for COO-level decisions.</li>
+                <li>Redesigned key website pages; improved CTAs & flows; ~10% MQL lift.</li>
+                <li>Launched 4-week LinkedIn series (testimonials, case studies, Q&As) to boost engagement.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="row">
+            <div class="title">LTIMindtree — Senior Software Engineer</div>
+            <div class="when">(Oct 2020 – Feb 2024)</div>
+          </div>
+
+          <div class="two-col">
+            <div>
+              <b>Key Achievements</b>
+              <ul>
+                <li>Spotlight Award for pioneering a software testing system.</li>
+                <li>Business Unit of the Year — contributions to a 6-member project team.</li>
+              </ul>
+
+              <b>Software Development</b>
+              <ul>
+                <li>Built & maintained a HealthTech product (Danish client); contributed to ~$1M revenue.</li>
+                <li>Introduced a UI unit testing framework to improve dev efficiency.</li>
+                <li>Enhanced app features to lift average session time by ~5%/day.</li>
+                <li>Cut potential security threats by ~40% via DevOps-led audits.</li>
+                <li>Improved code quality by ~30% using SonarCloud.</li>
+                <li>Automated BMP→PRO image conversion; saved ~24 man-hours.</li>
+              </ul>
+
+              <b>Stakeholder Management</b>
+              <ul>
+                <li>Managed Agile tasks; ~99% on-time delivery aligned to scope.</li>
+                <li>Prioritized requirements to design ~10 features for 50,000+ users.</li>
+                <li>Led ~15 sprint cycles; facilitated ceremonies using JIRA.</li>
+                <li>Leveraged Azure DevOps to提升 collaboration and throughput.</li>
+              </ul>
+            </div>
+
+            <div>
+              <b>Data Analytics</b>
+              <ul>
+                <li>Coordinated product globalization migrations; handled data validation.</li>
+                <li>Migrated ~50k patient records with accuracy & integrity.</li>
+                <li>Analysed application insights; produced 360° behavior reports.</li>
+                <li>Optimized APIs to improve application performance.</li>
+              </ul>
+
+              <b>Quality Assurance</b>
+              <ul>
+                <li>Developed UI unit tests for ~80 blocks achieving 100% coverage; ~25% stability gain.</li>
+                <li>Reduced bug incidence by ~10% through comprehensive QA.</li>
+              </ul>
+
+              <b>Leadership</b>
+              <ul>
+                <li>Self-learned Git; ran 3 training sessions to lift team productivity.</li>
+                <li>Conducted KT sessions for 4 new team members.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="por">
+        <h2>Positions of Responsibility</h2>
+        <div class="grid">
+          <div class="card">
+            <div class="title">PreQL — Analytics Club</div>
+            <ul>
+              <li>Led “The Strategy Lab” with 500+ registrations; 6 PPIs from Lupin.</li>
+              <li>Ran a SQL workshop for 48 students (practical fundamentals).</li>
+              <li>Organized 4 events with 100+ attendees to upskill analytics.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="title">LTIMindtree — Event Facilitator</div>
+            <ul>
+              <li>Coordinated Nordics townhall (120+ attendees, multi-location).</li>
+              <li>Owned end-to-end event planning, anchoring, and storytelling.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="title">R.E.W.A.R.D.S NGO — Volunteer</div>
+            <ul>
+              <li>Delivered meals to 400+ children in North-East Delhi.</li>
+              <li>Conducted 5 educational sessions for underprivileged children.</li>
+              <li>Supported operations: data entry and records updates.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="card">
+          <div><b>Tech Stack</b></div>
+          <div class="chips">
+            <span class="chip">SQL</span><span class="chip">TypeScript</span><span class="chip">HTML</span>
+            <span class="chip">CSS</span><span class="chip">C#</span><span class="chip">Angular</span>
+            <span class="chip">.NET</span><span class="chip">SSMS</span><span class="chip">SSIS</span>
+            <span class="chip">Git/GitHub</span><span class="chip">Azure DevOps</span><span class="chip">MS Office</span>
+            <span class="chip">HubSpot</span>
+          </div>
+          <div style="margin-top:12px"><b>Practices</b></div>
+          <div class="chips">
+            <span class="chip">Agile</span><span class="chip">DevOps</span><span class="chip">JIRA</span>
+            <span class="chip">Stakeholder Management</span><span class="chip">Sprint Planning</span>
+            <span class="chip">Backlog Mgmt</span><span class="chip">Burndown Tracking</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="certs">
+        <h2>Certifications & Extracurriculars</h2>
+        <div class="two-col">
+          <div class="card">
+            <b>Certifications</b>
+            <ul>
+              <li>Pluralsight — Unit Testing in Angular 12; DevOps: The Big Picture; Agile Fundamentals; Git: Big Picture</li>
+              <li>Coursera / AWS — Google Data Analytics (Ongoing); Multiple Linear Regression (scikit-learn);
+                Image Compression with K-Means; AWS Partner: Accreditation (Technical)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <b>Extracurriculars & Hobbies</b>
+            <ul>
+              <li>Music enthusiast & lead guitarist; performed across school & college fests.</li>
+              <li>Fitness & Wellness — increased body mass via disciplined training & nutrition.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer style="padding:24px 0; color:var(--muted); font-size:13px">
+        © <span id="y"></span> Vedant Kaul • Mumbai, India
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
